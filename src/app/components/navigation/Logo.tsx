@@ -1,7 +1,9 @@
+import Link from 'next/link';
+
 export default function Logo() {
     return (
         <h1 className="font-pacifico">
-            <a href="./">Raymond Yang</a>
+            <Link href="./">Raymond Yang</Link>
         </h1>
     );
 }

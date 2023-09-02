@@ -5,7 +5,7 @@ import TechStackData from './TechStackData';
 export default function Skills() {
     return (
         <div className="flex flex-col">
-            <PageHeading heading={'Skills'} size={'3xl'} margin={6} />
+            <PageHeading heading={'Skills'} size={'text-3xl'} margin={'my-6'} />
             <p className="font-josefinSans text-lg">
                 Praesent malesuada mi nisi, quis tempus magna venenatis ut.
                 Suspendisse tempor sem at scelerisque congue. Curabitur mollis,

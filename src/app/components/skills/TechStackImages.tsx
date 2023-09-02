@@ -13,7 +13,11 @@ export default function TechStackImages(props: ITechStackProps) {
                 props.titleIsCenter ? 'items-center' : ''
             }`}
         >
-            <PageHeading heading={props.title} size={'2xl'} margin={4} />
+            <PageHeading
+                heading={props.title}
+                size={'text-2xl'}
+                margin={'my-4'}
+            />
             <div className={`flex flex-wrap gap-2`}>
                 {props.skills.map((skill, index) => (
                     <img

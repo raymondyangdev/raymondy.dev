@@ -9,14 +9,14 @@ export default function Footer() {
                 <Link href={'https://github.com/raymondyangdev'}>
                     <img
                         className="w-8 h-8"
-                        src="./assets/images/github.svg"
+                        src="./assets/images/socials/github.svg"
                         alt="GitHub Logo"
                     />
                 </Link>
                 <Link href={'https://www.linkedin.com/in/raymondyangdev/'}>
                     <img
                         className="w-8 h-8"
-                        src="./assets/images/linkedin-in.svg"
+                        src="./assets/images/socials/linkedin-in.svg"
                         alt="LinkedIn Logo"
                     />
                 </Link>

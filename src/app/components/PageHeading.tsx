@@ -1,10 +1,14 @@
 type IPageHeadingProps = {
     heading: string;
+    size: string;
+    margin?: number;
 };
 
-export default function PageHeadings(props: IPageHeadingProps) {
+export default function PageHeading(props: IPageHeadingProps) {
     return (
-        <h2 className=" my-6 underline decoration-sky-900 underline-offset-8 text-3xl font-pacifico">
+        <h2
+            className={`my-${props.margin} underline decoration-sky-900 underline-offset-8 text-${props.size} font-pacifico`}
+        >
             {props.heading}
         </h2>
     );

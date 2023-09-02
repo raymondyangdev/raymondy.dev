@@ -24,6 +24,10 @@ const TechStackData = {
             alt: 'Express.js Logo',
         },
         {
+            src: './assets/images/techstack/cloudflare.svg',
+            alt: 'Cloudflare Logo',
+        },
+        {
             src: './assets/images/techstack/tailwind.svg',
             alt: 'Tailwind.css Logo',
         },

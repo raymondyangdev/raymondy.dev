@@ -3,13 +3,18 @@ import PageHeading from '../PageHeading';
 type ITechStackProps = {
     skills: Array<{ src: string; alt: string }>;
     title: string;
+    titleIsCenter?: boolean;
 };
 
 export default function TechStackImages(props: ITechStackProps) {
     return (
-        <div className="flex flex-col">
+        <div
+            className={`flex flex-col ${
+                props.titleIsCenter ? 'items-center' : ''
+            }`}
+        >
             <PageHeading heading={props.title} size={'2xl'} margin={4} />
-            <div className="flex flex-wrap gap-2 items-center justify-center">
+            <div className={`flex flex-wrap gap-2`}>
                 {props.skills.map((skill, index) => (
                     <img
                         className="w-16 h-16"

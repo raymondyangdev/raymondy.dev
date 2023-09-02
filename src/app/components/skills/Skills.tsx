@@ -29,6 +29,7 @@ export default function Skills() {
                     <TechStackImages
                         title={'Technologies'}
                         skills={TechStackData.Technologies}
+                        titleIsCenter={true}
                     />
                 </div>
 
@@ -36,6 +37,7 @@ export default function Skills() {
                     <TechStackImages
                         title={'Developer Tools'}
                         skills={TechStackData.Tools}
+                        titleIsCenter={true}
                     />
                 </div>
             </div>

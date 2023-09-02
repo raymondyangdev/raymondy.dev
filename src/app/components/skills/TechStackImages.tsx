@@ -9,7 +9,7 @@ export default function TechStackImages(props: ITechStackProps) {
     return (
         <div className="flex flex-col">
             <PageHeading heading={props.title} size={'2xl'} margin={4} />
-            <div className="flex flex-wrap gap-2 items-center">
+            <div className="flex flex-wrap gap-2 items-center justify-center">
                 {props.skills.map((skill, index) => (
                     <img
                         className="w-16 h-16"

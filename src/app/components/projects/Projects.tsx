@@ -1,7 +1,57 @@
 import PageHeading from '../PageHeading';
 import ProjectCard from './ProjectCard';
 import Link from 'next/link';
-import ProjectsData from './ProjectsData';
+
+export type ITechStackColor = {
+    [key: string]: string;
+};
+
+const TechStackColorMap: ITechStackColor = {
+    React: 'bg-blue-400 text-blue-900',
+    TypeScript: 'bg-sky-500 text-sky-900',
+    'Tailwind CSS': 'bg-cyan-400 text-cyan-900',
+    'Next.js': 'bg-neutral-900 text-white',
+    JavaScript: 'bg-yellow-400 text-yellow-900',
+    'Express.js': 'bg-white text-neutral-900',
+    Java: 'bg-orange-400 text-orange-900',
+};
+
+const ProjectsData = [
+    {
+        projectName: 'raymondyang.io',
+        description: 'This website',
+        link: 'https://github.com/raymondyangdev',
+        projectImg: 'https://avatars.githubusercontent.com/u/88478402?v=4',
+        techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js'],
+        techStackColors: {
+            React: TechStackColorMap.React,
+            TypeScript: TechStackColorMap.TypeScript,
+            'Tailwind CSS': TechStackColorMap['Tailwind CSS'],
+        },
+    },
+    {
+        projectName: 'Wanderlust Wanderers',
+        description: 'This website',
+        link: 'https://github.com/raymondyangdev',
+        projectImg: 'https://avatars.githubusercontent.com/u/88478402?v=4',
+        techStack: ['JavaScript', 'Tailwind CSS', 'Express.js'],
+        techStackColors: {
+            JavaScript: TechStackColorMap.JavaScript,
+            'Tailwind CSS': TechStackColorMap['Tailwind CSS'],
+            'Express.js': TechStackColorMap['Express.js'],
+        },
+    },
+    {
+        projectName: 'Bulls and Cows',
+        description: 'This website',
+        link: 'https://github.com/raymondyangdev',
+        projectImg: 'https://avatars.githubusercontent.com/u/88478402?v=4',
+        techStack: ['Java'],
+        techStackColors: {
+            Java: TechStackColorMap.Java,
+        },
+    },
+];
 
 export default function Projects() {
     return (
@@ -30,7 +80,7 @@ export default function Projects() {
                     projectImg={project.projectImg}
                     techStack={project.techStack}
                     description={project.description}
-                    techStackColors={project.techStackColors}
+                    techStackColors={TechStackColorMap}
                 />
             ))}
         </section>

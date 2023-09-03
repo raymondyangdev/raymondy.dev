@@ -1,14 +1,5 @@
 import Link from 'next/link';
-
-type ITechStackColor = {
-    React?: string;
-    TypeScript?: string;
-    'Tailwind CSS'?: string;
-    'Next.js'?: string;
-    JavaScript?: string;
-    'Express.js'?: string;
-    Java?: string;
-};
+import { ITechStackColor } from './Projects';
 
 type IProjectCardProps = {
     projectName: string;
@@ -35,11 +26,7 @@ export default function ProjectCard(props: IProjectCardProps) {
                     {props.techStack.map((tech, index) => (
                         <div
                             key={index}
-                            className={`rounded-md px-2 mx-1 py-1 text-xs font-semibold ${
-                                props.techStackColors[
-                                    tech as keyof ITechStackColor
-                                ] ?? ''
-                            }`}
+                            className={`rounded-md px-2 mx-1 py-1 text-xs font-semibold ${props.techStackColors[tech]}`}
                         >
                             {tech}
                         </div>

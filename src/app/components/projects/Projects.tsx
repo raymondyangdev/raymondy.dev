@@ -71,7 +71,7 @@ export default function Projects() {
             <h3 className="font-josefinSans text-xl">
                 Here are a few of my most recent projects!
             </h3>
-            {ProjectsData.slice(0, 4).map((project, index) => (
+            {ProjectsData.slice(0, 3).map((project, index) => (
                 <ProjectCard
                     key={index}
                     link={project.link}

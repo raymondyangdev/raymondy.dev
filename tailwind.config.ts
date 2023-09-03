@@ -11,7 +11,8 @@ const config: Config = {
             fontFamily: {
                 pacifico: ['var(--font-pacifico)'],
                 josefinSans: ['var(--font-josefinSans)'],
-                montserrat: ['var(--font-montserrat)'],
+                montserratBold: ['var(--font-montserratBold)'],
+                montserratNormal: ['var(--font-montserratNormal)'],
             },
             container: {
                 center: true,

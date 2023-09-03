@@ -15,10 +15,16 @@ const josefinSans = Josefin_Sans({
     subsets: ['latin'],
     variable: '--font-josefinSans',
 });
-const montserrat = Montserrat({
+const montserratBold = Montserrat({
     subsets: ['latin'],
     weight: '700',
-    variable: '--font-montserrat',
+    variable: '--font-montserratBold',
+});
+
+const montserratNormal = Montserrat({
+    subsets: ['latin'],
+    weight: '300',
+    variable: '--font-montserratNormal',
 });
 
 export const metadata: Metadata = {
@@ -37,7 +43,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`flex h-screen flex-col w-full bg-slate-900 text-white ${pacifico.variable} ${josefinSans.variable} ${montserrat.variable}`}
+                className={`flex h-screen flex-col w-full bg-slate-900 text-white ${pacifico.variable} ${josefinSans.variable} ${montserratBold.variable} ${montserratNormal.variable}`}
             >
                 <Navbar />
                 <div className="flex-1 container">{children}</div>

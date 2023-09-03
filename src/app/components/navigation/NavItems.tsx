@@ -20,7 +20,7 @@ export default function NavItems() {
     ];
 
     return (
-        <div className="flex gap-10 font-montserrat">
+        <div className="flex gap-10 font-montserratBold">
             {navbarLinks.map((link) => (
                 <Link key={link.route} href={link.route} className={link.class}>
                     {link.label}

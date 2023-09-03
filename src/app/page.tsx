@@ -1,6 +1,6 @@
 import Banner from './components/home/Banner';
 import About from './components/home/About';
-import Skills from './components/skills/Skills';
+import TechStack from './components/skills/TechStack';
 import Projects from './components/projects/Projects';
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
         <section className="px-10">
             <Banner />
             <About />
-            <Skills />
+            <TechStack />
             <Projects />
         </section>
     );

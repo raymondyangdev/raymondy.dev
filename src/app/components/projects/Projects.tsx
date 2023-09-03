@@ -6,7 +6,7 @@ export type ITechStackColor = {
     [key: string]: string;
 };
 
-const TechStackColorMap: ITechStackColor = {
+export const TechStackColorMap: ITechStackColor = {
     React: 'bg-blue-400 text-blue-900',
     TypeScript: 'bg-sky-500 text-sky-900',
     'Tailwind CSS': 'bg-cyan-400 text-cyan-900',
@@ -19,7 +19,7 @@ const TechStackColorMap: ITechStackColor = {
     'Stability.ai': 'bg-indigo-400 text-indigo-900',
 };
 
-const ProjectsData = [
+export const ProjectsData = [
     {
         projectName: 'raymondyang.io',
         description: `In less than a week, I taught myself React and Next.js via their documentation to create this website, getting it ready for the Summer of Tech's Meet & Greet event. I deployed it using Cloudflare Pages, and now, it has turned into a long-term passion project of mine 🙂`,
@@ -45,7 +45,7 @@ const ProjectsData = [
     },
     {
         projectName: 'Wanderlust Wanderers',
-        description: `Wanderlust Wanderers is a full-stack blog app with CRUD features. An enhanced iteration of a group project created for the final assignment of COMPSCI 719. Refactored with a travel-inspired theme and integrated Tailwind CSS into the project.`,
+        description: `A full-stack blog app with CRUD features and an enhanced iteration of a group project created for the final assignment of COMPSCI 719. Refactored with a travel-inspired theme and integrated Tailwind CSS into the project.`,
         link: 'https://github.com/raymondyangdev/wanderlust-wanderers',
         projectImg: './assets/images/projects/wanderlust-wanderers.png',
         techStack: ['JavaScript', 'Tailwind CSS', 'Express.js', 'SQLite'],
@@ -71,7 +71,7 @@ export default function Projects() {
             <h3 className="font-josefinSans text-xl">
                 Here are a few of my most recent projects!
             </h3>
-            {ProjectsData.map((project, index) => (
+            {ProjectsData.slice(0, 4).map((project, index) => (
                 <ProjectCard
                     key={index}
                     link={project.link}

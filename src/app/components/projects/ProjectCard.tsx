@@ -12,15 +12,15 @@ type IProjectCardProps = {
 
 export default function ProjectCard(props: IProjectCardProps) {
     return (
-        <div className="bg-slate-700 mb-8 my-4 p-4 h-36 rounded-xl flex">
+        <div className="bg-slate-700 my-4 p-4 rounded-xl flex">
             <img
-                className="w-36 rounded-xl"
+                className="w-36 h-36 rounded-xl self-center"
                 src={props.projectImg}
                 alt={`${props.projectName} Screenshot`}
             />
             <div className="flex flex-col flex-1 mx-4">
                 <div className="flex items-center">
-                    <h2 className="font-montserrat text-xl py-1 mr-2">
+                    <h2 className="font-montserratBold text-xl py-1 mr-2">
                         {props.projectName}
                     </h2>
                     {props.techStack.map((tech, index) => (
@@ -32,7 +32,7 @@ export default function ProjectCard(props: IProjectCardProps) {
                         </div>
                     ))}
                 </div>
-                <p className="flex-1 font-josefinSans text-lg mt-2">
+                <p className="flex-1 font-montserratNormal text-md mt-2">
                     {props.description}
                 </p>
             </div>

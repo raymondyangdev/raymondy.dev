@@ -54,7 +54,7 @@ export default function NavItems() {
                             : './assets/images/navigation/hamburger-menu.svg'
                     }
                     alt="Hamburger Menu/Close Icon"
-                    className={`w-6 h-6 order-last`}
+                    className={`w-6 h-6`}
                 />
             </button>
 

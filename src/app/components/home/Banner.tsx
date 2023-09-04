@@ -2,15 +2,14 @@ import Link from 'next/link';
 
 export default function Banner() {
     return (
-        <div className="flex items-start md:items-center justify-between my-4 h-80 sm:h-64">
+        <div className="flex items-center md:justify-between sm:my-2 h-80 sm:h-64">
             <div className="flex flex-col">
                 {' '}
-                <h2 className="font-josefinSans text-4xl mb-2 pt-4 pr-4 md:pt-0 md:pr-0">
+                <h2 className="font-josefinSans text-3xl sm:text-4xl mb-2 pt-4 pr-4 md:pt-0 md:pr-0">
                     Hello, I'm{' '}
-                    <span className="font-montserratBold text-cyan-500">
-                        Raymond Yang
+                    <span className="font-montserratBold text-cyan-500 whitespace-nowrap">
+                        Raymond Yang 👋
                     </span>{' '}
-                    👋
                 </h2>
                 <div className="font-josefinSans mb-4 text-lg mr-4 lg:mr-0 flex flex-col">
                     {' '}
@@ -54,7 +53,7 @@ export default function Banner() {
             </div>
 
             <img
-                className="self-center w-36 h-36 md:w-52 md:h-52 mx-3 md:mx-0 rounded-full object-cover border-white border-4"
+                className="self-center w-36 h-36 md:w-52 md:h-52 mr-3 md:mr-0 rounded-full object-cover border-white border-4"
                 src="./assets/images/banner/banner-photo.JPG"
                 alt="Raymond Yang"
             />

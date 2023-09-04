@@ -1,6 +1,10 @@
+'use client';
 import PageHeading from '../PageHeading';
 import ProjectCard from './ProjectCard';
 import Link from 'next/link';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export type ITechStackColor = {
     [key: string]: string;
@@ -52,9 +56,14 @@ export const ProjectsData = [
 ];
 
 export default function Projects() {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return (
         <section>
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <PageHeading
                     heading={'Recent Projects'}
                     size={'text-3xl'}
@@ -62,7 +71,7 @@ export default function Projects() {
                 />
                 <Link
                     href={'/projects'}
-                    className="text-lg font-montserratBold flex hover:underline hover:decoration-sky-900 hover:underline-offset-8 "
+                    className="pb-2 sm:pb-0 text-lg font-montserratBold flex hover:underline hover:decoration-sky-900 hover:underline-offset-8 "
                 >
                     ALL PROJECTS →
                 </Link>
@@ -71,15 +80,17 @@ export default function Projects() {
                 Here are a few of my most recent projects!
             </h3>
             {ProjectsData.slice(0, 3).map((project, index) => (
-                <ProjectCard
-                    key={index}
-                    link={project.link}
-                    projectName={project.projectName}
-                    projectImg={project.projectImg}
-                    techStack={project.techStack}
-                    description={project.description}
-                    techStackColors={TechStackColorMap}
-                />
+                <div data-aos="fade-right">
+                    <ProjectCard
+                        key={index}
+                        link={project.link}
+                        projectName={project.projectName}
+                        projectImg={project.projectImg}
+                        techStack={project.techStack}
+                        description={project.description}
+                        techStackColors={TechStackColorMap}
+                    />
+                </div>
             ))}
         </section>
     );

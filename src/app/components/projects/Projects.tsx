@@ -43,13 +43,13 @@ export const ProjectsData = [
         projectImg: './assets/images/projects/bulls-and-cows.svg',
         techStack: ['Java'],
     },
-    {
-        projectName: 'Wanderlust Wanderers',
-        description: `A full-stack blog app with CRUD features and an enhanced iteration of a group project created for the final assignment of COMPSCI 719. Refactored with a travel-inspired theme and integrated Tailwind CSS into the project.`,
-        link: 'https://github.com/raymondyangdev/wanderlust-wanderers',
-        projectImg: './assets/images/projects/wanderlust-wanderers.png',
-        techStack: ['JavaScript', 'Tailwind CSS', 'Express.js', 'SQLite'],
-    },
+    // {
+    //     projectName: 'Wanderlust Wanderers',
+    //     description: `A full-stack blog app with CRUD features and an enhanced iteration of a group project created for the final assignment of COMPSCI 719. Refactored with a travel-inspired theme and integrated Tailwind CSS into the project.`,
+    //     link: 'https://github.com/raymondyangdev/wanderlust-wanderers',
+    //     projectImg: './assets/images/projects/wanderlust-wanderers.png',
+    //     techStack: ['JavaScript', 'Tailwind CSS', 'Express.js', 'SQLite'],
+    // },
 ];
 
 export default function Projects() {

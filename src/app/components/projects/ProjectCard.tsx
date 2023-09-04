@@ -12,23 +12,23 @@ type IProjectCardProps = {
 
 export default function ProjectCard(props: IProjectCardProps) {
     return (
-        <div className="bg-slate-700 my-4 p-4 rounded-xl flex flex-col md:flex-row">
+        <div className="bg-slate-700 my-4 p-2 md:p-4 rounded-xl flex flex-col md:flex-row">
             <img
                 className="w-36 h-36 rounded-xl self-center"
                 src={props.projectImg}
                 alt={`${props.projectName} Screenshot`}
             />
             <div className="flex flex-col flex-1 mx-4">
-                <div className="flex flex-col md:flex-row items-center">
+                <div className="flex flex-col lg:flex-row items-center">
                     <h2 className="font-montserratBold text-xl py-1 mr-2">
                         {props.projectName}
                     </h2>
-                    <div className="flex">
+                    <div className="flex flex-wrap justify-center items-center">
                         {' '}
                         {props.techStack.map((tech, index) => (
                             <div
                                 key={index}
-                                className={`rounded-md px-2 mx-1 py-1 text-xs whitespace-nowrap font-semibold ${props.techStackColors[tech]}`}
+                                className={`rounded-md px-2 mx-1 my-1 py-1 text-xs whitespace-nowrap font-semibold ${props.techStackColors[tech]}`}
                             >
                                 {tech}
                             </div>

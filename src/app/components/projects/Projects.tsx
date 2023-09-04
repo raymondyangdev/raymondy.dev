@@ -22,17 +22,16 @@ export const TechStackColorMap: ITechStackColor = {
 export const ProjectsData = [
     {
         projectName: 'raymondyang.io',
-        description: `In less than a week, I taught myself React and Next.js via their documentation to create this website in preparation for Summer of Tech's Meet & Greet event. I deployed it using Cloudflare Pages, and now, it has turned into a long-term passion project of mine 🙂`,
+        description: `In under a week, I taught myself React and Next.js via the official documentation to create this website in preparation for Summer of Tech's Meet & Greet event. I deployed it using Cloudflare Pages, and now, it has turned into a long-term passion project of mine 🙂`,
         link: 'https://github.com/raymondyangdev/raymondyang.io',
         projectImg: './assets/images/memoji.png',
         techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js'],
     },
     {
         projectName: 'The Art Thief',
-        description: `Our team achieved 1st place at WDCC x SESA Hackathon for The Art Thief - a web-based game developed in 24 hours that involves crafting replicas of renowned historical masterpieces from simple line sketches and text prompts utilising Stability.ai's Stable Diffusion API.
-`,
+        description: `Our team achieved 1st place at WDCC x SESA Hackathon for The Art Thief - a web-based game developed in 24 hours that utlises Stability.ai's Stable Diffusion API to draw replicas of renowned historical masterpieces from simple line sketches and text prompts.`,
         link: 'https://github.com/raymondyangdev/the-art-thief-wdccxsesa',
-        projectImg: './assets/images/projects/the-art-thief.png',
+        projectImg: './assets/images/projects/the-art-thief.svg',
         techStack: ['Svelte', 'Stability.ai', 'Express.js'],
     },
 

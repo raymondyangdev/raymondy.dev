@@ -10,7 +10,7 @@ export default function TechStackImages(props: ITechStackProps) {
     return (
         <div
             className={`flex flex-col ${
-                props.titleIsCenter ? 'sm:items-center' : ''
+                props.titleIsCenter ? 'md:items-center' : ''
             }`}
         >
             <PageHeading

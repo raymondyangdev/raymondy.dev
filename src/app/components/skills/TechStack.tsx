@@ -49,7 +49,7 @@ export default function Skills() {
     return (
         <div className="flex flex-col">
             <PageHeading heading={'Skills'} size={'text-3xl'} margin={'my-6'} />
-            <div className="text-justify md:text-start font-josefinSans text-lg">
+            <div className="text-start md:text-justify font-josefinSans text-lg">
                 {' '}
                 <p>
                     I have a preference for statically typed languages,

@@ -42,6 +42,7 @@ const TechStackData = {
     Tools: [
         { src: './assets/images/techstack/git.svg', alt: 'Git Logo' },
         { src: './assets/images/techstack/apple.svg', alt: 'Apple Logo' },
+        { src: './assets/images/techstack/iterm2.png', alt: 'iTerm2 Logo' },
     ],
 };
 

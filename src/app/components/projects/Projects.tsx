@@ -24,7 +24,7 @@ export const ProjectsData = [
         projectName: 'raymondyang.io',
         description: `In less than a week, I taught myself React and Next.js via their documentation to create this website, getting it ready for the Summer of Tech's Meet & Greet event. I deployed it using Cloudflare Pages, and now, it has turned into a long-term passion project of mine 🙂`,
         link: 'https://github.com/raymondyangdev/raymondyang.io',
-        projectImg: 'https://avatars.githubusercontent.com/u/88478402?v=4',
+        projectImg: './assets/images/projects/raymondyang.io.png',
         techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js'],
     },
     {

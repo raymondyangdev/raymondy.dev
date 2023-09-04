@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function NavItems() {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +10,11 @@ export default function NavItems() {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    const currentPath = usePathname();
+
+    useEffect(() => setIsOpen(false), [currentPath]);
+
     const navbarLinks = [
         {
             label: 'Projects',

@@ -50,8 +50,8 @@ export default function NavItems() {
                 <img
                     src={
                         isOpen
-                            ? './assets/images/close-menu.svg'
-                            : './assets/images/hamburger-menu.svg'
+                            ? './assets/images/navigation/close-menu.svg'
+                            : './assets/images/navigation/hamburger-menu.svg'
                     }
                     alt="Hamburger Menu/Close Icon"
                     className={`w-6 h-6 order-last`}

@@ -49,26 +49,29 @@ export default function Skills() {
     return (
         <div className="flex flex-col">
             <PageHeading heading={'Skills'} size={'text-3xl'} margin={'my-6'} />
-            <p className="font-josefinSans text-lg">
-                I have a preference for statically typed languages, appreciating
-                their capacity for robustness and predictability in software
-                development.
-            </p>
-            <p className="font-josefinSans text-lg">
-                Recently, I discovered a newfound passion for working with
-                React, particularly while building this website. Fuelled by its
-                component-based architecture, I am passionate about good
-                software design and writing clean, maintainable code.
-            </p>
-            <div className="flex justify-between">
-                <div className="mb-4 basis-72">
+            <div className="text-justify md:text-start font-josefinSans text-lg">
+                {' '}
+                <p>
+                    I have a preference for statically typed languages,
+                    appreciating their capacity for robustness and
+                    predictability in software development.
+                </p>
+                <p>
+                    Recently, I discovered a newfound passion for working with
+                    React, particularly while building this website. Fuelled by
+                    its component-based architecture, I am passionate about good
+                    software design and writing clean, maintainable code.
+                </p>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:justify-between">
+                <div className="sm:mb-4 sm:basis-72">
                     <TechStackImages
                         title={'Languages'}
                         skills={TechStackData.Languages}
                     />
                 </div>
 
-                <div className="mb-4 basis-72">
+                <div className="sm:mb-4 sm:basis-72">
                     <TechStackImages
                         title={'Technologies'}
                         skills={TechStackData.Technologies}
@@ -76,7 +79,7 @@ export default function Skills() {
                     />
                 </div>
 
-                <div className="mb-4 basis-72">
+                <div className="sm:mb-4 sm:basis-72">
                     <TechStackImages
                         title={'Developer Tools'}
                         skills={TechStackData.Tools}

@@ -49,7 +49,11 @@ const TechStackData = {
 export default function Skills() {
     return (
         <div className="flex flex-col">
-            <PageHeading heading={'Skills'} size={'text-3xl'} margin={'my-2'} />
+            <PageHeading
+                heading={'Skills'}
+                size={'text-3xl'}
+                margin={'my-2 md:my-4'}
+            />
             <div className="text-start md:text-justify font-josefinSans text-lg">
                 {' '}
                 <p>

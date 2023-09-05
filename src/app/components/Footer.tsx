@@ -23,7 +23,7 @@ export default function Footer() {
                         />
                     </Link>
                 </div>
-                <div className="flex whitespace-nowrap flex-1 gap-1 justify-center">
+                <div className="flex flex-wrap flex-1 gap-1 justify-center">
                     Made with<span className="text-red-400">♥</span>by
                     <Link
                         className="hover:underline hover:decoration-sky-900 hover:underline-offset-4"

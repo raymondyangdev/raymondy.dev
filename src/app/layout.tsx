@@ -46,7 +46,7 @@ export default function RootLayout({
                 className={`flex h-screen flex-col w-full bg-slate-900 text-white ${pacifico.variable} ${josefinSans.variable} ${montserratBold.variable} ${montserratNormal.variable}`}
             >
                 <Navbar />
-                <div className="flex-1 container">{children}</div>
+                <main className="flex-1 container">{children}</main>
                 <Footer />
             </body>
         </html>

@@ -42,13 +42,14 @@ const TechStackData = {
     Tools: [
         { src: './assets/images/techstack/git.svg', alt: 'Git Logo' },
         { src: './assets/images/techstack/apple.svg', alt: 'Apple Logo' },
+        { src: './assets/images/techstack/iterm2.png', alt: 'iTerm2 Logo' },
     ],
 };
 
 export default function Skills() {
     return (
         <div className="flex flex-col">
-            <PageHeading heading={'Skills'} size={'text-3xl'} margin={'my-6'} />
+            <PageHeading heading={'Skills'} size={'text-3xl'} margin={'my-2'} />
             <div className="text-start md:text-justify font-josefinSans text-lg">
                 {' '}
                 <p>

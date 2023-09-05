@@ -18,10 +18,10 @@ export default function TechStackImages(props: ITechStackProps) {
                 size={'text-2xl'}
                 margin={'my-4'}
             />
-            <div className={`flex flex-wrap gap-2`}>
+            <div className={`flex flex-wrap gap-4 sm:gap-2`}>
                 {props.skills.map((skill, index) => (
                     <img
-                        className="w-16 h-16"
+                        className="w-10 h-10 sm:w-16 sm:h-16"
                         key={index}
                         src={skill.src}
                         alt={skill.alt}

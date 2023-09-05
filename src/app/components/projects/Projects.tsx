@@ -38,7 +38,6 @@ export const ProjectsData = [
         projectImg: './assets/images/projects/the-art-thief.svg',
         techStack: ['Svelte', 'Stability.ai', 'Express.js'],
     },
-
     {
         projectName: 'Bulls and Cows',
         description: `A console-based game developed for a COMPSCI 718 assignment to demonstrate the application of fundamental object-oriented programming principles. This project features multiple levels of AI difficulty, including easy, medium, and hard. Notably, the Hard AI employs a minimax algorithm to optimise its guessing strategy against the player.`,
@@ -46,13 +45,14 @@ export const ProjectsData = [
         projectImg: './assets/images/projects/bulls-and-cows.svg',
         techStack: ['Java'],
     },
-    // {
-    //     projectName: 'Wanderlust Wanderers',
-    //     description: `A full-stack blog app with CRUD features and an enhanced iteration of a group project created for the final assignment of COMPSCI 719. Refactored with a travel-inspired theme and integrated Tailwind CSS into the project.`,
-    //     link: 'https://github.com/raymondyangdev/wanderlust-wanderers',
-    //     projectImg: './assets/images/projects/wanderlust-wanderers.png',
-    //     techStack: ['JavaScript', 'Tailwind CSS', 'Express.js', 'SQLite'],
-    // },
+    {
+        projectName: 'Fluffy Frogs Blog',
+        description: `A full-stack blog app with CRUD features created for the final assignment of COMPSCI 719 as a team of 4. This application includes essential CRUD features. Our initial front-end design was not completed by the deadline, so I integrated Tailwind CSS to assist with polishing the front-end. I enjoyed working with SQL and designing the database. The ER diagram can be found in the root directory of the GitHub repository.
+`,
+        link: 'https://github.com/raymondyangdev/fluffy-frogs-blog',
+        projectImg: './assets/images/projects/fluffy-frog.svg',
+        techStack: ['JavaScript', 'Tailwind CSS', 'Express.js', 'SQLite'],
+    },
 ];
 
 export default function Projects() {
@@ -80,9 +80,8 @@ export default function Projects() {
                 Here are a few of my most recent projects!
             </h3>
             {ProjectsData.slice(0, 3).map((project, index) => (
-                <div data-aos="fade-right">
+                <div data-aos="fade-right" key={index}>
                     <ProjectCard
-                        key={index}
                         link={project.link}
                         projectName={project.projectName}
                         projectImg={project.projectImg}

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Banner() {
     return (
-        <div className="flex items-center md:justify-between sm:my-2 h-96 sm:h-80 md:h-64">
+        <div className="flex items-center md:justify-between my-2 h-auto md:h-64">
             <div className="flex flex-col">
                 {' '}
                 <h2 className="font-josefinSans text-3xl sm:text-4xl mb-2 pt-4 pr-4 md:pt-0 md:pr-0">
@@ -11,7 +11,7 @@ export default function Banner() {
                         Raymond Yang 👋
                     </span>
                 </h2>
-                <div className="font-josefinSans mb-4 text-lg mr-4 lg:mr-0 flex flex-col">
+                <div className="font-josefinSans mb-4 md:pr-4 text-lg mr-4 lg:mr-0 flex flex-col">
                     {' '}
                     <p>
                         Aspiring{' '}

@@ -2,14 +2,14 @@ import Link from 'next/link';
 
 export default function Banner() {
     return (
-        <div className="flex items-center md:justify-between sm:my-2 h-80 sm:h-64">
+        <div className="flex items-center md:justify-between sm:my-2 h-96 sm:h-80 md:h-64">
             <div className="flex flex-col">
                 {' '}
                 <h2 className="font-josefinSans text-3xl sm:text-4xl mb-2 pt-4 pr-4 md:pt-0 md:pr-0">
                     Hello, I'm{' '}
-                    <span className="font-montserratBold text-cyan-500 whitespace-nowrap">
+                    <span className="font-montserratBold text-cyan-500">
                         Raymond Yang 👋
-                    </span>{' '}
+                    </span>
                 </h2>
                 <div className="font-josefinSans mb-4 text-lg mr-4 lg:mr-0 flex flex-col">
                     {' '}
@@ -18,9 +18,7 @@ export default function Banner() {
                         <span className="text-cyan-500 font-montserratBold">
                             Software Engineer
                         </span>{' '}
-                        &
-                    </p>{' '}
-                    <p>
+                        &{' '}
                         <span className="text-cyan-500 font-montserratBold">
                             Computer Science
                         </span>{' '}
@@ -53,7 +51,7 @@ export default function Banner() {
             </div>
 
             <img
-                className="self-center w-36 h-36 md:w-52 md:h-52 mr-3 md:mr-0 rounded-full object-cover border-white border-4"
+                className="self-center w-24 h-24 sm:w-36 sm:h-36 md:w-52 md:h-52 md:mr-0 rounded-full object-cover border-white border-4"
                 src="./assets/images/banner/banner-photo.JPG"
                 alt="Raymond Yang"
             />

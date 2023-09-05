@@ -46,7 +46,7 @@ export const ProjectsData = [
         techStack: ['Java'],
     },
     {
-        projectName: 'Fluffy Frogs Blog',
+        projectName: 'Fluffy Frogs',
         description: `A full-stack blog app with CRUD features created for the final assignment of COMPSCI 719 as a team of 4. This application includes essential CRUD features. Our initial front-end design was not completed by the deadline, so I integrated Tailwind CSS to assist with polishing the front-end. I enjoyed working with SQL and designing the database. The ER diagram can be found in the root directory of the GitHub repository.
 `,
         link: 'https://github.com/raymondyangdev/fluffy-frogs-blog',

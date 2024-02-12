@@ -26,7 +26,7 @@ export const TechStackColorMap: ITechStackColor = {
 export const ProjectsData = [
     {
         projectName: 'raymondyang.io',
-        description: `I taught myself React and Next.js via the official documentation to create this website in preparation for Summer of Tech's Meet & Greet event. I deployed it using Cloudflare Pages, and now, it has turned into a long-term passion project of mine 🙂.`,
+        description: `I taught myself React and Next.js via the official documentation to create this website. Deployed it using Cloudflare Pages, and it has turned into a long-term passion project of mine 🙂`,
         link: 'https://github.com/raymondyangdev/raymondyang.io',
         projectImg: './assets/images/memoji.png',
         techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js'],
@@ -65,7 +65,7 @@ export default function Projects() {
         <section>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <PageHeading
-                    heading={'Recent Projects'}
+                    heading={'Notable Projects'}
                     size={'text-3xl'}
                     margin={'my-6'}
                 />

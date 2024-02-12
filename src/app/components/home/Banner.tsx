@@ -20,7 +20,7 @@ export default function Banner() {
                         </span>{' '}
                         &{' '}
                         <span className="text-cyan-500 font-montserratBold">
-                            Computer Science
+                            Penultimate Computer Science
                         </span>{' '}
                         Student @ University of Auckland
                     </p>

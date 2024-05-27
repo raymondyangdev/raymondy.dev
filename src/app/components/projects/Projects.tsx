@@ -28,7 +28,7 @@ export const TechStackColorMap: ITechStackColor = {
 export const ProjectsData = [
   {
     projectName: "Patrols",
-    description: `Currently developing a progressive web app to enhance incident reporting procedures for Community Patrol New Zealand, within a team of 11 developers and designers utilising React, Node, Express, Supabase, PostgreSQL, and Prisma, while
+    description: `Currently volunteering my time as a full-stack developer for a Web Development & Consulting Club (WDCC) project team. Actively developing a progressive web app to enhance incident reporting procedures for Community Patrol New Zealand, within a team of 11 developers and designers utilising React, Node, Express, Supabase, PostgreSQL, and Prisma, while
 following Agile methodologies.`,
     link: "https://github.com/UoaWDCC/patrols",
     projectImg: "./assets/images/projects/cpnz.png",
